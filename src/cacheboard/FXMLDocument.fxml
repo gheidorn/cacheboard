@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="339.0" prefWidth="411.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cacheboard.FXMLDocumentController">
+  <children>
+    <Button id="button" fx:id="chooseCacheButton" layoutX="14.0" layoutY="14.0" onAction="#handleButtonAction" text="Choose a Cache" />
+    <TableView layoutX="14.0" layoutY="45.0" prefHeight="141.0" prefWidth="383.0">
+      <columns>
+        <TableColumn prefWidth="75.0" text="Column X" />
+        <TableColumn prefWidth="75.0" text="Column X" />
+      </columns>
+    </TableView>
+    <Label fx:id="selectedCacheLabel" layoutX="206.0" layoutY="14.0" prefHeight="21.0" prefWidth="192.0" text="No Cache Selected" textAlignment="RIGHT" />
+  </children>
+</AnchorPane>

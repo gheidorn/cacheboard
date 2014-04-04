@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cacheboard.scene.ScreenYController">
+  <children>
+    <Label layoutX="474.0" layoutY="346.0" text="Screen Y">
+      <font>
+        <Font name="Calibri" size="32.0" />
+      </font>
+    </Label>
+    <Button fx:id="screenXButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleScreenXButtonClick" text="Screen X" />
+    <Button fx:id="screenYButton" layoutX="80.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleScreenYButtonClick" text="Screen Y" />
+    <Button layoutX="14.0" layoutY="365.0" mnemonicParsing="false" onAction="#handleMainMenuButtonClick" text="Main Menu" />
+    <MenuBar layoutX="0.0" layoutY="0.0" minHeight="21.000106811523438" prefHeight="25.0" prefWidth="600.0" useSystemMenuBar="true">
+      <menus>
+        <Menu disable="false" mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="View">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#handleScreenXButtonClick" text="ScreenX" />
+            <MenuItem mnemonicParsing="false" onAction="#handleScreenYButtonClick" text="ScreenY" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </children>
+</AnchorPane>

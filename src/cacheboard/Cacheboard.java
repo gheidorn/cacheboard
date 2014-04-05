@@ -32,6 +32,7 @@ public class Cacheboard extends Application {
         root.getChildren().addAll(sceneController);
         Scene scene = new Scene(root);
         stage.setScene(scene);
+        stage.setFullScreen(true);
         stage.show();
     }
 
